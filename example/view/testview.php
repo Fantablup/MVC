@@ -11,7 +11,7 @@ public function __construct($model, $tpl) {
 
 public function output(){
 	$content = <<<"EOT"
-		<div style="display:block;margin:10px;padding:10px;background:yellow;"class=""> just a second test view
+		<div style="display:block;margin:10px;padding:10px;background:yellow;"class="">{$this->model->testText}
 		</div>
 		EOT;
 		return $content;
