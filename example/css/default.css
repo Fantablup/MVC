@@ -44,7 +44,7 @@ body, html{
     left: 10px;	
 }
 
-.titleHeader{
+#mainMenu .titleHeader{
 	display:block;
     background: #505050;
 	color: white;
