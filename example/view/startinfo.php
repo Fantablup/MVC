@@ -17,7 +17,7 @@ class startInfoView
 					You need to create this table.<br><br>
 					Also set database settings in globs.php.<br><br>
 					CREATE TABLE `article` (<br>
-					`id` bigint(20) NOT NULL,
+					`id` bigint(20) NOT NULL,<br>
 					`name` varchar(40) COLLATE utf8_unicode_ci NOT NULL,<br>
 					`weight` float NOT NULL,<br>
 					`color` varchar(30) COLLATE utf8_unicode_ci NOT NULL,<br>
