@@ -140,11 +140,11 @@ class addBoxModel
 	public function saveAJAX(){
 		$params = array(
 			'action'		=> 'addbox',
-			'savedata'	=> '1',
-			'name'		=> $this->name,
+			'savedata'		=> '1',
+			'name'			=> $this->name,
 			'weight'		=> $this->weight,
-			'color'		=> $this->color,
-			'countries'	=> $this->countries,
+			'color'			=> $this->color,
+			'countries'		=> $this->countries,
 			'multiplier'	=> $this->multiplier);
 		?>
 		<script>
