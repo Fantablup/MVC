@@ -20,7 +20,7 @@ class startInfoView
 					`id` bigint(20) NOT NULL,<br>
 					`name` varchar(40) COLLATE utf8_unicode_ci NOT NULL,<br>
 					`weight` float NOT NULL,<br>
-					`color` varchar(30) COLLATE utf8_unicode_ci NOT NULL,<br>
+					`color` varchar(30) NOT NULL,<br>
 					`country` int(1) NOT NULL,<br>
 					`multiplier` decimal(10,4) NOT NULL<br>
 					) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;<br>
