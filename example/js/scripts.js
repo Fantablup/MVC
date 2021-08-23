@@ -47,6 +47,7 @@ function removeParam(parameter)
 	
 	function loadData(){
 		var hr = new XMLHttpRequest();
+		hr.timeout = 15000;
 		var url = "index.php";
 		var vars = "action=tableview"+"&loadtable=1";
 		var modalBox = document.querySelector(".modalBox");
@@ -120,6 +121,7 @@ function removeParam(parameter)
 	async function saveData(params){
 		return new Promise((resolve, reject) => {
 			var hr = new XMLHttpRequest();
+			hr.timeout = 15000;
 			var url = "index.php";
 			var vars = "action=addbox"+"&savedata=1";
 			var saved = false;
