@@ -93,7 +93,8 @@ private $model;
 		$tpl->content .= $view->output();
 		// Test to add another view to the page
 		
-		$view2 = new testPageView($model,$tpl);
+		$model2 = new testViewModel();
+		$view2 = new testPageView($model2,$tpl);
 		$tpl->content .= $view2->output();
 		
 		echo $tpl;
