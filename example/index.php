@@ -6,6 +6,7 @@ include("model/startPageModel.php");
 include("view/startpage.php");
 include("model//startInfoModel.php");
 include("view/startinfo.php");
+include("model/testviewModel.php");
 include("view/testview.php");
 include("model/addBoxModel.php");
 include("view/addBox.php");
