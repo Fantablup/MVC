@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+*{
+	box-sizing: border-box;
+}
+
+form{
+	margin: 0;
+}
+
+body, html{
+	margin: 0;
+	padding:0;
+    height: 100%;  
+	overflow: hidden;	
+}
+
+.homeLink{
+	position: absolute;
+    top: 70px;
+    left: 10px;
+    text-decoration: none;
+	z-index: 2;
+}
+
+#mainContainer{
+	display: flex;
+	flex: 1;
+    flex-direction: column;
+	width: 100%;
+    height: 100%;
+	background-image: url("../images/background.jpg"); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */	
+}
+
+.infoImage{
+	position: absolute;
+	z-index: 1;
+	width: 500px;
+	top: 120px;
+    left: 10px;	
+}
+
+.titleHeader{
+	display:block;
+    background: #505050;
+	color: white;
+	padding: 4px;
+	margin-bottom: 4px;
+    width: 100%;
+    text-align: center;	
+}
+
+#mainFooter{
+	display: block;
+    background: #505050;
+	z-index: 4;
+    color: white;
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+#mainMenu{
+	display: flex;
+	z-index: 4;
+	background: grey;
+	padding-bottom: 4px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+margin-bottom:10px;	
+}
+
+.menuSelected{
+	background:#5aec48 !important;
+	color: #fff !important;
+}
+
+#mainMenu ul, .listBoxes ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#mainMenu li {
+    background: #c0ff00;
+    cursor: pointer;
+	text-decoration: none;
+	display:inline-block;
+}
+
+#mainMenu li a {
+    padding: 4px;
+	display: block;
+	text-decoration: none;
+}
+
+#mainBody{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+	margin-top:5px;
+	overflow-y: auto;
+	z-index: 3;
+}
+
+.modalHeader {
+    background: #9effc9;
+    padding: 5px;
+    min-width: 100%;
+}
+
+.modalBox{
+	display: none;
+	flex-direction: column;	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+    min-width: 300px;
+    min-height: 200px;
+    max-width: 300px;
+	z-index: 1000 !important;
+	background: #fff;
+	box-shadow: 2px 2px 14px 0px #333333;
+}
+
+.modalContext {
+    width: 100%;
+    flex: 1;
+	align-items: center;
+    display: flex;
+    justify-content: center;
+	padding: 10px;	
+}
+
+.modalButtons {
+	display: none;
+    width: 100%;
+    height: 50px;
+}
+
+.defaultBox{
+	z-index: 4;
+	background: #fff;
+	box-shadow: 2px 2px 14px 0px #333333;
+}
+
+.addBox{
+	align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.mainHeader{
+    background: #9effc9;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mainContext{
+	padding:10px;
+	display: flex;
+    flex-direction: column;
+}
+
+.addBox input, .addBox select{
+	display :block;
+	height: 30px;
+	width: 200px;
+	margin-bottom:5px;
+}
+
+.addBox input[type="text"], .addBox select{
+	padding: 4px;
+}
+
+.addBox #addBoxColor{ 
+	cursor: pointer;
+}
+
+.addBox .boxBottom{
+	display: flex;
+	margin:5px 0 0 0;
+	max-width: 200px;	
+}
+
+.addBox #addInfoBbox{
+	width:100%;
+	padding: 2px;
+}
+
+.addBox .error{
+	color: red;
+}
+
+.addBox .ok{
+	color: green;
+}
+
+.addBox .idle{
+	color: #000;
+}
+
+.addBox .saveBtn{
+	align-self: flex-end;
+	min-width:50px;
+	display:inline-block;
+	border: 1px solid rgb(121 121 121);
+	color:#000;
+	background: #79c9ff;
+	cursor:pointer;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	padding:10px;
+}
+
+.defaultList .defaultRowHeader{
+	background: #ececec !important;
+	border: 1px solid #b9b9b9 !important;
+}
+
+.defaultList .defaultRowHeader div:not(:first-child) {
+    border-left: 1px solid #b9b9b9 !important;
+}
+
+.defaultList .defaultRowHeader,.defaultList .defaultRow{
+    position:relative;
+    display:grid;
+    grid-gap:0px;
+    align-items:center;
+    grid-template-columns:  repeat(4, 110px);
+	border: 1px solid #dfdfdf;
+}
+
+.defaultList .defaultRowHeader div,.defaultList .defaultRow div{
+	padding:4px;
+}
+
+.defaultList .defaultRowHeader div:not(:first-child),
+.defaultList .defaultRow div:not(:first-child){
+	border-left: 1px solid #dfdfdf;
+}
+
+.defaultList .defaultRow div{
+	height: 100%;
+}
+
+.defaultList .defaultRow div:nth-child(2), .defaultList .defaultRowHeader div:nth-child(2),
+.defaultList .defaultRow div:nth-child(4), .defaultList .defaultRowHeader div:nth-child(4)
+{
+	text-align: end;
+}
+
+
+.startBox{
+	min-width: 300px;
+	max-width: 400px;
+}
+.startInfoBox{
+	min-width: 300px;
+	max-width: 800px;
+}
+.listBoxes{
+	align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+.hidden{
+	position: absolute;
+	top: auto;
+	width: 0px;
+	height: 0px !important;;
+	overflow: hidden;	
+	opacity: 0;
+}
+:link {
+  color: #000;
+}
+
+/* visited link */
+a:visited {
+	color: #000;
+}
+
+/* mouse over link */
+a:hover {
+	color: #000;
+}
+
+/* selected link */
+a:active {
+	color: #000;
+}
+
+@media (max-width:700px){
+	
+	.infoImage{
+		position: absolute;
+		z-index: 1;
+		width: 300px;
+		top: 120px;
+		left: 10px;	
+	}
+	
+}
