@@ -1,6 +1,4 @@
 <?php
-include_once 'templates/template.php';
-//print_r( $_REQUEST);
  class addBoxView
 {
 	private $model;

@@ -1,5 +1,4 @@
 <?php
-include_once 'templates/template.php';
 class testPageView
 {
 private $model;

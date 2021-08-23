@@ -1,7 +1,4 @@
-
 <?php
-include_once 'templates/template.php';
-
 class tableViewView
 {
 	private $model;
