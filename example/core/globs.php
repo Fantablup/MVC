@@ -17,5 +17,5 @@ It starts a session and load all settings, and the DB class.
 		DB_DATABASE,
 		DB_SERVER_USERNAME,
 		DB_SERVER_PASSWORD
-    );  
+	);  
 ?>
